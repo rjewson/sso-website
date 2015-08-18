@@ -1,0 +1,51 @@
+.form-control{
+    background-color:#fff;
+    box-shadow: none;
+    border: 1px solid #fff;
+    color: $light-blue-base;
+}
+
+.input-group-addon{
+	background-color: #fff;
+  	border: 1px solid #fff;
+  	color: $light-blue-base;
+}
+
+button{
+	border:none;
+	text-shadow:none;
+}
+
+.btn-default:focus, 
+.btn-default:hover,
+.btn-default{
+	border: none;
+	color: $light-blue-base;
+	text-shadow:none;
+	padding: 8px 17%;
+	margin: 0 5px;
+	background: #fff;
+	box-shadow: none;
+}
+
+.search{
+	background:#ffba00;
+	color:$white-base;
+
+}
+
+.flex-dates{
+	position: absolute;
+    bottom: -11px;
+    left: -100%;
+    label{
+    	font-weight: normal;
+    }
+}
+#search{
+	display: inline-block;
+}
+#search p{
+	visibility: hidden;
+
+}
