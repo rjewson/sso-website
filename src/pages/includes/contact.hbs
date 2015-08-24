@@ -7,38 +7,41 @@
 
           <!--Address -->                  
           <div class="col-md-6 col-sm-6 contact-details">
-            <h2><span itemprop="name">SSO</span></h2>
+            <h2><span itemprop="name">Address</span></h2>
             <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <div itemprop="name">SSO</div>
                 <div itemprop="streetAddress">XX Sun Street</div>
                 <div itemprop="addressLocality">Waltham Abbey</div>
                 <div><span itemprop="addressRegion">Essex</span> <span itemprop="postalCode">EN9 XXX</span></div>
             </div>
-            <div>Tel:<span itemprop="telephone">01992 000 000</span></div>
-            <div>Fax:<span itemprop="faxNumber">01992 000 000</span></div>
-            <div>E-mail: <span itemprop="email">info@info.com</span></div>
+            <div>Tel: <span itemprop="telephone">01992 000 000</span></div>
+            <div>Fax: <span itemprop="faxNumber">01992 000 000</span></div>
+            <div>E-mail: <span itemprop="email"><a href="mailto:someone@yoursite.com">someone@yoursite.com</a></span></div>
           </div>
 
           <!--Opening hours -->                  
           <div class="col-md-6 col-sm-6">
-            <h3>Opening Times</h3>
-            <ul class="opening">
-              <li itemprop="openingHours" datetime="Mo 9.00-17.30"><span>Monday</span> <span>09.00 - 17.30</span></li>
-              <li itemprop="openingHours" datetime="Tu 9.00-17.30"><span>Tuesday</span> <span>09.00 - 17.30</span></li>
-              <li itemprop="openingHours" datetime="We 9.00-17.30"><span>Wednesday</span> <span>09.00 - 17.30</span></li>
-              <li itemprop="openingHours" datetime="Th 9-00-17.30"><span>Thursday</span> <span>09.00 - 17.30</span></li>
-              <li itemprop="openingHours" datetime="Fr 9.00-17.30"><span>Friday</span> <span>09.00 - 17.30</span></li>
-              <li itemprop="openingHours" datetime="Sa 9.00-17.30"><span>Saturday</span> <span>09.00 - 17.30</span></li>
-              <li><span>Sunday</span><span>Closed</span></li>
-            </ul>
+            <table class="table" cellpadding="">
+              <caption class="text-center">Opening Times</caption>
+              <tbody class="opening">
+                <tr itemprop="openingHours" datetime="Mo 9.00-17.30"><td>Monday</td> <td>09.00 - 17.30</td></tr>
+                <tr itemprop="openingHours" datetime="Tu 9.00-17.30"><td>Tuesday</td> <td>09.00 - 17.30</td></tr>
+                <tr itemprop="openingHours" datetime="We 9.00-17.30"><td>Wednesday</td> <td>09.00 - 17.30</td></tr>
+                <tr itemprop="openingHours" datetime="Th 9-00-17.30"><td>Thursday</td> <td>09.00 - 17.30</td></tr>
+                <tr itemprop="openingHours" datetime="Fr 9.00-17.30"><td>Friday</td> <td>09.00 - 17.30</td></tr>
+                <tr itemprop="openingHours" datetime="Sa 9.00-17.30"><td>Saturday</td> <td>09.00 - 17.30</td></tr>
+                <tr class="danger"><td>Sunday</td><td>Closed</td></tr>
+              </tbody>
+            </table>
           </div>
         </div>
-          
+        
       </div>
 
       <div class="col-md-6 col-sm-12">
         <form class="form-horizontal">
 
-          <h3>Contact Form</h3>
+          <h3>Contact Me</h3>
 
           <div class="form-group">
             <label for="inputName" class="col-sm-2 control-label">Name</label>
@@ -63,16 +66,6 @@
 
           <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox"> Remember me
-                </label>
-              </div>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
               <button type="submit" class="btn btn-default">Send</button>
             </div>
           </div>
@@ -84,8 +77,7 @@
       
     <div class="row text-center">
       <div class="col-lg-12">
-        <h1>MAP</h1>
-        <hr class="colored">
+        <div id="map-container"></div>
       </div>
     </div>
   </div>

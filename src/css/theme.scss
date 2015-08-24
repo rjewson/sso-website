@@ -24,6 +24,12 @@ section {
   background-color: #222222;
 }
 
+nav {
+  // .navbar {
+  //   background-color: grey;
+  // }
+}
+
 header {
   position: relative;
   display: block;
@@ -67,23 +73,55 @@ header {
     z-index: -1;
   }
 
+  .intro-content {
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:50%;
+    margin:auto;
+  }
+
+  .img-centered {
+    margin: 0 auto;
+  }
+
 }
 
 #about {
   background-color: white;
 }
 
-.contact-details {
+#team {
+
+  background-color: rgba(0,0,0,0.5);
+
+  h3 {
+    position: relative;
+    // margin: -20px 40px 0 40px;
+    background-color:white;
+  }
 }
 
+#contact {
 
-.opening {
-  li {
-    span:nth-child(1) {
-      display: inline-block;
-      width:130px;
+  background-color: #E0E6EB;
+
+  .contact-details {
+  }
+
+  .opening {
+    td:nth-child(1) {
+      // text-align: left;
+      // padding-right:30px;
     }
   }
+
+  #map-container { height: 300px }
+
+}
+
+#footer {
+  background-color:white;
 }
 
 
