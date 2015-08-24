@@ -1,18 +1,107 @@
+html,
 body {
-  padding-top: 70px;
-  padding-bottom: 30px;
+  height: 100%;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.img-centered {
+  margin: 0 auto;
+}
+.content-row {
+  margin-top: 30px;
+}
+section {
+  padding: 100px 0;
+}
+.bg-gray {
+  background-color: #f5f5f5;
+}
+.bg-dark {
+  color: white;
+  background-color: #222222;
 }
 
-.theme-dropdown .dropdown-menu {
-  position: static;
+header {
+  position: relative;
   display: block;
-  margin-bottom: 20px;
-}
-
-.theme-showcase > p > .btn {
-  margin: 5px 0;
-}
-
-.theme-showcase .navbar .container {
+  height: auto;
   width: auto;
+  background-color: #222222;
+  background: no-repeat center center;
+  // background-attachment: scroll;
+  background-size: cover;
+  padding: 100px 0;
+
+  @media (max-width: $screen-xs-max) {
+    height: 90%;
+    width: 100%;
+    padding: 0;
+    // background-attachment: scroll;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    height: 90%;
+    width: 100%;
+    padding: 0;
+    // background-attachment: scroll;
+  }
+
+  @media (min-width: $screen-md-min) {
+    // background-attachment: fixed;
+  }
+
+  &::before {
+    content: ' ';
+    position: fixed; // instead of background-attachment
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    background: url('../img/backgrounds/4128-30_image-2-c.jpg') no-repeat center center;
+    background-size: cover;
+    will-change: transform; // creates a new paint layer
+    z-index: -1;
+  }
+
+}
+
+#about {
+  background-color: white;
+}
+
+.contact-details {
+}
+
+
+.opening {
+  li {
+    span:nth-child(1) {
+      display: inline-block;
+      width:130px;
+    }
+  }
+}
+
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
 }

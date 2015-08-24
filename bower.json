@@ -13,6 +13,7 @@
   ],
   "dependencies": {
     "bootstrap-sass": "~3.3.3",
-    "OwlCarousel2": "~2.0.0-beta.3"
+    "OwlCarousel2": "~2.0.0-beta.3",
+    "wow": "~1.1.2"
   }
 }

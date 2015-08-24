@@ -67,6 +67,7 @@ var config = {
       bowerDir + '/jquery/dist/jquery.min.js',
       bowerDir + '/bootstrap-sass/assets/javascripts/bootstrap.js',
       bowerDir + '/OwlCarousel2/dist/owl.carousel.min.js',
+      bowerDir + '/wow/dist/wow.min.js',
       src + '/js/**/*.js'
     ],
     watch: src + '/js/**/*.js',
