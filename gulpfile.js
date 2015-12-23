@@ -31,6 +31,7 @@ var config = {
       outputStyle: 'nested',
       includePaths: [
         bowerDir + '/OwlCarousel2/dist/assets',
+        bowerDir + '/slick-carousel/slick',
         bowerDir + '/bootstrap-sass/assets/stylesheets'
       ]
     }
@@ -59,6 +60,12 @@ var config = {
     ],
     partials: [
       src + '/pages/includes/*.hbs'
+    ],
+    data: [
+      src + '/pages/data/*.json'
+    ],
+    helpers: [
+      src + '/pages/helpers/*.js'
     ]
   },
 
@@ -67,6 +74,7 @@ var config = {
       bowerDir + '/jquery/dist/jquery.min.js',
       bowerDir + '/bootstrap-sass/assets/javascripts/bootstrap.js',
       bowerDir + '/OwlCarousel2/dist/owl.carousel.min.js',
+      bowerDir + '/slick-carousel/slick/slick.js',
       bowerDir + '/wow/dist/wow.min.js',
       src + '/js/**/*.js'
     ],
@@ -108,6 +116,13 @@ gulp.task('assemble', function () {
   console.log(config.assemble.layouts);
   assemble.layouts(config.assemble.layouts); 
   assemble.partials(config.assemble.partials);
+  assemble.data(config.assemble.data);
+  // assemble.helpers(config.assemble.helpers);
+  // console.dir(assemble);
+  // assemble.helper('log2', function (str) {
+  //   console.dir(str);
+  //   // return str.toUpperCase();
+  // });
   return gulp.src(config.assemble.src)
     .pipe(gulpAssemble(assemble, { layout: 'default' }))
     .pipe(extname())

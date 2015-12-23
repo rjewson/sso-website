@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-   <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <title>...</title>
+  <meta name="description" content="...">
+
+  <meta name="twitter:card" value="summary">
+
+  <meta property="og:title" content="..."/>
+  <meta property="og:type" content=""/>
+  <meta property="og:url" content=""/>
+  <meta property="og:image" content=""/>
+  <meta property="og:description" content=""/>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/app.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
   </head>
-  <body>
+  <body itemscope itemtype="http://schema.org/Optician">
     {% body %}
     <script type="text/javascript">
+      // Authortagging???
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map-container'), {
-          center: {lat: 51.6850340, lng: 0.0027230},
-          zoom: 12,
+          center: {lat: 51.686802, lng: 0.000888},
+          zoom: 16,
           disableDefaultUI: true,
-          scrollwheel:false
+          scrollwheel:false,
+          draggable:false
         });
         var marker = new google.maps.Marker({
-          position: {lat: 51.6850340, lng: 0.0027230},
+          position: {lat: 51.686802, lng: 0.000888},
           map: map,
-          title: "X Marks the spot"
+          title: "Sun Street Opticians"
         });
         google.maps.event.addDomListener(window, "resize", function() {
           var center = map.getCenter();
